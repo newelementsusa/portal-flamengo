@@ -1,0 +1,23 @@
+{
+  "players": {
+    "zico": "img/jogadores/zico.jpg",
+    "leonidas": "img/jogadores/leonidas.jpg",
+    "gabigol": "img/jogadores/gabigol.jpg",
+    "romario": "img/jogadores/romario.jpg",
+    "bebeto": "img/jogadores/bebeto.jpg",
+    "cafu": "img/jogadores/cafu.jpg",
+    "socrates": "img/jogadores/socrates.jpg",
+    "david-luiz": "img/jogadores/david-luiz.jpg",
+    "vagner-love": "img/jogadores/vagner-love.jpg",
+    "diego-ribas": "img/jogadores/diego-ribas.jpg",
+    "vinicius-junior": "img/jogadores/vinicius-junior.jpg",
+    "filipe-luis": "img/jogadores/filipe-luis.jpg",
+    "ronaldao": "img/jogadores/ronaldao.jpg",
+    "willian-arao": "img/jogadores/willian-arao.jpg",
+    "thiago-maia": "img/jogadores/thiago-maia.jpg"
+  },
+  "coaches": {
+    "jorge-jesus": "img/tecnicos/jorge-jesus.jpg",
+    "mano-menezes": "img/tecnicos/mano-menezes.jpg"
+  }
+}

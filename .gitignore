@@ -1,0 +1,12 @@
+deploy.py
+deploy_prod.py
+fetch_photos.py
+fetch_photos2.py
+fetch_presidentes.py
+fix_ssl.py
+fix_ssl2.py
+check_ssl.py
+git_push.py
+.claude/
+*.pyc
+__pycache__/

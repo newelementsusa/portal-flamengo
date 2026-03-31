@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1286595053228930" crossorigin="anonymous"></script>
 
 <script type="application/ld+json">
 {
@@ -106,6 +106,36 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
 .topbar-left { display:flex; gap:20px; }
 .topbar-right { display:flex; gap:16px; align-items:center; }
 .topbar-date { color: rgba(255,255,255,.35); }
+
+/* ========== HEADER TICKER ========== */
+.header-ticker {
+  background: var(--red-dark);
+  padding: 5px 0;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.header-ticker-track {
+  display: flex;
+  animation: headerTickerScroll 35s linear infinite;
+}
+.header-ticker-item {
+  white-space: nowrap;
+  color: rgba(255,255,255,.85);
+  font-size: .75rem;
+  padding: 0 30px;
+  font-weight: 500;
+  letter-spacing: .3px;
+}
+.header-ticker-item::before {
+  content: '⚽';
+  margin-right: 6px;
+  font-size: .65rem;
+}
+@keyframes headerTickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 /* ========== HEADER ========== */
 .header {
@@ -1004,6 +1034,24 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
   </div>
 </header>
 
+<!-- HEADER TICKER -->
+<div class="header-ticker">
+  <div class="header-ticker-track">
+    <span class="header-ticker-item">Flamengo campeão carioca 2026 — 40º título</span>
+    <span class="header-ticker-item">Leonardo Jardim é o novo técnico do Mengão</span>
+    <span class="header-ticker-item">Libertadores 2026: Grupo A — Estudiantes, Cusco e Medellín</span>
+    <span class="header-ticker-item">Pedro artilheiro com 8 gols na temporada</span>
+    <span class="header-ticker-item">Lucas Paquetá de volta ao Flamengo</span>
+    <span class="header-ticker-item">Vitão reforça a zaga rubro-negra</span>
+    <span class="header-ticker-item">Flamengo campeão carioca 2026 — 40º título</span>
+    <span class="header-ticker-item">Leonardo Jardim é o novo técnico do Mengão</span>
+    <span class="header-ticker-item">Libertadores 2026: Grupo A — Estudiantes, Cusco e Medellín</span>
+    <span class="header-ticker-item">Pedro artilheiro com 8 gols na temporada</span>
+    <span class="header-ticker-item">Lucas Paquetá de volta ao Flamengo</span>
+    <span class="header-ticker-item">Vitão reforça a zaga rubro-negra</span>
+  </div>
+</div>
+
 <!-- HERO SLIDER -->
 <section class="hero">
   <div class="hero-slide active">
@@ -1011,7 +1059,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
     <div class="hero-overlay"></div>
   </div>
   <div class="hero-slide">
-    <img class="hero-slide-bg" src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1600&h=900&fit=crop" alt="Torcida vibrando com bandeiras no estádio">
+    <img class="hero-slide-bg" src="https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?w=1600&h=900&fit=crop" alt="Estadio de futebol vazio iluminado a noite">
     <div class="hero-overlay"></div>
   </div>
   <div class="hero-slide">
@@ -1043,12 +1091,6 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
   </div>
 </section>
 
-<!-- Ad Banner Top -->
-<div style="text-align:center;padding:20px 0;max-width:1240px;margin:0 auto;">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0000000000000000" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-
 <!-- NEWS TICKER -->
 <div class="ticker">
   <div class="ticker-label">⚡ Ao Vivo</div>
@@ -1064,6 +1106,12 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
     <span class="ticker-item">Pedro artilheiro da temporada com 8 gols</span>
     <span class="ticker-item">Lucas Paquetá de volta ao Ninho do Urubu</span>
   </div>
+</div>
+
+<!-- Ad Banner Top -->
+<div style="text-align:center;padding:20px 0;max-width:1240px;margin:0 auto;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1286595053228930" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
 <!-- STATS BAR -->
@@ -1115,7 +1163,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
       </article>
       <article class="card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?w=600&h=400&fit=crop" alt="Técnico à beira do campo de futebol" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=600&h=400&fit=crop" alt="Campo de futebol verde iluminado para jogo noturno" loading="lazy">
         </div>
         <div class="card-body">
           <span class="card-cat">Bastidores</span>
@@ -1152,7 +1200,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
   <div class="container">
     <div class="featured-grid">
       <div class="featured-img">
-        <img src="https://images.unsplash.com/photo-1516475429286-465d815a0df7?w=800&h=600&fit=crop" alt="Remo e história do Flamengo nas águas da Baía de Guanabara" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=800&h=600&fit=crop" alt="Estadio de futebol iluminado em noite de grande jogo" loading="lazy">
       </div>
       <div class="featured-body">
         <span class="featured-label">Origem do Clube</span>
@@ -1181,7 +1229,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         </div>
       </a>
       <a href="tecnicos/" class="explore-card">
-        <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=400&h=530&fit=crop" alt="Treinador orientando jogadores em campo" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=400&h=530&fit=crop" alt="Marcacao do campo de futebol em detalhe" loading="lazy">
         <div class="explore-card-overlay">
           <span class="explore-card-label">Liderança</span>
           <h3>Técnicos Históricos</h3>
@@ -1189,7 +1237,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         </div>
       </a>
       <a href="escalacoes/" class="explore-card">
-        <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=530&fit=crop" alt="Formação tática de time de futebol" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?w=400&h=530&fit=crop" alt="Bola de futebol sobre o gramado verde" loading="lazy">
         <div class="explore-card-overlay">
           <span class="explore-card-label">Formações</span>
           <h3>Escalações por Ano</h3>
@@ -1197,7 +1245,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         </div>
       </a>
       <a href="curiosidades/" class="explore-card">
-        <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400&h=530&fit=crop" alt="Torcida de futebol vibrando no estádio" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=400&h=530&fit=crop" alt="Bola de futebol no gramado do estadio" loading="lazy">
         <div class="explore-card-overlay">
           <span class="explore-card-label">Descubra</span>
           <h3>Curiosidades</h3>
@@ -1218,7 +1266,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
       <div class="editorial-main">
         <article class="card card--h">
           <div class="card-img">
-            <img src="https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=480&h=320&fit=crop" alt="Jogador lendário do futebol brasileiro" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?w=480&h=320&fit=crop" alt="Bola de futebol em campo profissional" loading="lazy">
           </div>
           <div class="card-body">
             <span class="card-cat">Jogadores Lendários</span>
@@ -1233,7 +1281,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         </article>
         <article class="card card--h">
           <div class="card-img">
-            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=480&h=320&fit=crop" alt="Equipe de futebol histórica" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517747614396-d21a78e63b34?w=480&h=320&fit=crop" alt="Gramado verde com linhas do campo de futebol" loading="lazy">
           </div>
           <div class="card-body">
             <span class="card-cat">Escalações Históricas</span>
@@ -1248,7 +1296,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         </article>
         <article class="card card--h">
           <div class="card-img">
-            <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?w=480&h=320&fit=crop" alt="Torcida lotando estádio de futebol" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1614632537197-38a17061c2bd?w=480&h=320&fit=crop" alt="Arquibancada de estadio de futebol" loading="lazy">
           </div>
           <div class="card-body">
             <span class="card-cat">Curiosidades</span>
@@ -1362,7 +1410,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
 
 <!-- Ad Banner Bottom -->
 <div style="text-align:center;padding:20px 0;max-width:1240px;margin:0 auto;">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0000000000000000" data-ad-slot="0987654321" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1286595053228930" data-ad-slot="0987654321" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 

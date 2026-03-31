@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pol&iacute;tica de Privacidade | Portal Flamengo</title>
+<meta name="description" content="Pol&iacute;tica de Privacidade do Portal Flamengo. Saiba como coletamos, usamos e protegemos seus dados pessoais em conformidade com a LGPD.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Portal Flamengo">
+<meta name="theme-color" content="#c3272b">
+<link rel="canonical" href="https://www.portalflamengo.com.br/politica-privacidade/">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<meta property="og:title" content="Pol&iacute;tica de Privacidade | Portal Flamengo">
+<meta property="og:description" content="Pol&iacute;tica de Privacidade do Portal Flamengo. LGPD compliant.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.portalflamengo.com.br/politica-privacidade/">
+<meta property="og:site_name" content="Portal Flamengo">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1286595053228930" crossorigin="anonymous"></script>
+
+<style>
+:root {
+  --red: #c3272b;
+  --red-dark: #9e1f22;
+  --red-deep: #7a1518;
+  --black: #0d0d0d;
+  --black-soft: #1a1a1a;
+  --gold: #d4a017;
+  --gold-light: #e8c547;
+  --white: #ffffff;
+  --off-white: #faf9f7;
+  --cream: #f5f0ea;
+  --gray-100: #f3f3f3;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-500: #737373;
+  --gray-700: #404040;
+  --gray-900: #171717;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', 'Inter', system-ui, sans-serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.1);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,.12);
+  --shadow-xl: 0 20px 60px rgba(0,0,0,.15);
+  --radius: 8px;
+  --transition: .35s cubic-bezier(.4,0,.2,1);
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family: var(--font-body);
+  color: var(--gray-900);
+  background: var(--off-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; transition: color var(--transition); }
+img { max-width:100%; display:block; }
+button { cursor:pointer; border:none; background:none; font-family:var(--font-body); }
+.container { max-width:1240px; margin:0 auto; padding:0 24px; }
+
+/* TOPBAR */
+.topbar {
+  background: var(--black);
+  padding: 6px 0;
+  font-size: .75rem;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.topbar .container { display:flex; justify-content:space-between; align-items:center; }
+.topbar a { color: rgba(255,255,255,.5); }
+.topbar a:hover { color: var(--gold); }
+.topbar-left { display:flex; gap:20px; }
+.topbar-right { display:flex; gap:16px; align-items:center; }
+.topbar-date { color: rgba(255,255,255,.35); }
+
+/* HEADER */
+.header {
+  background: var(--red);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 3px solid var(--red-dark);
+  box-shadow: 0 2px 20px rgba(0,0,0,.15);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  background: var(--black);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.logo span { color: var(--gold); }
+.nav { display:flex; align-items:center; gap:4px; }
+.nav a {
+  color: rgba(255,255,255,.9);
+  font-size: .85rem;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.nav a:hover { background: rgba(255,255,255,.12); color: var(--white); }
+.nav a.active { background: rgba(0,0,0,.2); color: var(--gold); }
+.header-actions { display:flex; align-items:center; gap:12px; }
+.search-btn {
+  color: rgba(255,255,255,.8);
+  font-size: 1.1rem;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all var(--transition);
+}
+.search-btn:hover { background: rgba(255,255,255,.12); color: var(--white); }
+.hamburger { display:none; color:var(--white); font-size:1.4rem; padding:8px; }
+
+/* PAGE HERO */
+.page-hero {
+  background: linear-gradient(135deg, var(--black) 0%, var(--black-soft) 100%);
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: 'CRF';
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: 18rem;
+  font-weight: 900;
+  color: rgba(255,255,255,.02);
+  pointer-events: none;
+}
+.page-hero .container { position: relative; z-index: 1; }
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .82rem;
+  color: rgba(255,255,255,.4);
+  margin-bottom: 20px;
+}
+.breadcrumb a { color: rgba(255,255,255,.4); }
+.breadcrumb a:hover { color: var(--gold); }
+.breadcrumb .sep { color: rgba(255,255,255,.2); }
+.page-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.page-hero p {
+  color: rgba(255,255,255,.5);
+  font-size: 1.05rem;
+  max-width: 640px;
+}
+
+/* CONTENT */
+.legal-content {
+  padding: 60px 0 80px;
+}
+.legal-content .container {
+  max-width: 860px;
+}
+.legal-content h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin: 48px 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--red);
+}
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+.legal-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin: 28px 0 12px;
+}
+.legal-content p {
+  color: var(--gray-700);
+  font-size: .97rem;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+.legal-content ul {
+  margin: 12px 0 20px 24px;
+  color: var(--gray-700);
+  font-size: .97rem;
+  line-height: 1.85;
+}
+.legal-content ul li {
+  margin-bottom: 8px;
+}
+.legal-content a {
+  color: var(--red);
+  text-decoration: underline;
+}
+.legal-content a:hover {
+  color: var(--red-dark);
+}
+.legal-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: .92rem;
+}
+.legal-content table th,
+.legal-content table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+  color: var(--gray-700);
+}
+.legal-content table th {
+  background: var(--gray-100);
+  color: var(--gray-900);
+  font-weight: 700;
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.legal-content table tr:hover td {
+  background: rgba(195,39,43,.03);
+}
+.legal-date {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--gray-200);
+  font-size: .88rem;
+  color: var(--gray-500);
+  font-style: italic;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--black);
+  padding: 60px 0 0;
+  color: rgba(255,255,255,.4);
+  font-size: .88rem;
+  border-top: 3px solid var(--red);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+.footer-brand h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.footer-brand h3 span { color: var(--red); }
+.footer-brand p { line-height: 1.7; margin-bottom: 16px; }
+.footer-col h4 {
+  color: var(--white);
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.footer-col a {
+  display: block;
+  color: rgba(255,255,255,.4);
+  padding: 6px 0;
+  transition: color var(--transition);
+}
+.footer-col a:hover { color: var(--red); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .78rem;
+  color: rgba(255,255,255,.25);
+}
+.footer-bottom a { color: rgba(255,255,255,.25); }
+.footer-bottom a:hover { color: var(--red); }
+
+/* SEARCH OVERLAY */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.92);
+  z-index: 200;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20vh;
+  backdrop-filter: blur(8px);
+}
+.search-overlay.active { display: flex; }
+.search-box {
+  width: 90%;
+  max-width: 640px;
+}
+.search-box input {
+  width: 100%;
+  padding: 20px 30px;
+  background: rgba(255,255,255,.08);
+  border: 2px solid rgba(255,255,255,.12);
+  border-radius: 60px;
+  color: var(--white);
+  font-size: 1.3rem;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color var(--transition);
+}
+.search-box input:focus { border-color: var(--red); }
+.search-box input::placeholder { color: rgba(255,255,255,.3); }
+.search-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: rgba(255,255,255,.5);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.search-close:hover { color: var(--white); }
+
+/* MOBILE NAV */
+.mobile-nav {
+  position: fixed;
+  top: 0; right: -300px;
+  width: 300px;
+  height: 100%;
+  background: var(--black);
+  z-index: 150;
+  padding: 80px 30px 30px;
+  transition: right var(--transition);
+  overflow-y: auto;
+}
+.mobile-nav.active { right: 0; }
+.mobile-nav a {
+  display: block;
+  color: rgba(255,255,255,.7);
+  padding: 14px 0;
+  font-size: 1.05rem;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.mobile-nav a:hover { color: var(--red); }
+.mobile-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 140;
+  display: none;
+}
+.mobile-nav-overlay.active { display: block; }
+.mobile-nav-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgba(255,255,255,.5);
+  font-size: 1.5rem;
+}
+
+/* SCROLL TO TOP */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-md);
+}
+.scroll-top.visible { opacity: 1; visibility: visible; }
+.scroll-top:hover { background: var(--black); transform: translateY(-3px); }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .nav a { padding: 8px 10px; font-size: .8rem; }
+  .legal-content table { font-size: .85rem; }
+  .legal-content table th,
+  .legal-content table td { padding: 10px 12px; }
+}
+@media (max-width: 768px) {
+  .topbar { display: none; }
+  .nav { display: none; }
+  .hamburger { display: block; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .page-hero { padding: 60px 0 40px; }
+  .page-hero h1 { font-size: 1.8rem; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  .legal-content table { display: block; overflow-x: auto; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <a href="../origem/">Origem</a>
+      <a href="../curiosidades/">Curiosidades</a>
+      <a href="../contato/">Contato</a>
+    </div>
+    <div class="topbar-right">
+      <span class="topbar-date" id="currentDate"></span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <a href="../" class="logo">
+      <div class="logo-icon">&#128308;</div>
+      Portal <span>Flamengo</span>
+    </a>
+    <nav class="nav">
+      <a href="../">In&iacute;cio</a>
+      <a href="../jogadores/">Jogadores</a>
+      <a href="../tecnicos/">T&eacute;cnicos</a>
+      <a href="../escalacoes/">Escala&ccedil;&otilde;es</a>
+      <a href="../presidentes/">Presidentes</a>
+      <a href="../curiosidades/">Curiosidades</a>
+      <a href="../momentos-historicos/">Momentos</a>
+      <a href="../noticias/">Not&iacute;cias</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-btn" onclick="toggleSearch()" aria-label="Buscar">&#128269;</button>
+      <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../">In&iacute;cio</a>
+      <span class="sep">/</span>
+      <span>Pol&iacute;tica de Privacidade</span>
+    </div>
+    <h1>Pol&iacute;tica de Privacidade</h1>
+    <p>Saiba como o Portal Flamengo coleta, utiliza e protege seus dados pessoais, em conformidade com a Lei Geral de Prote&ccedil;&atilde;o de Dados (LGPD).</p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="legal-content">
+  <div class="container">
+
+    <h2>1. Introdu&ccedil;&atilde;o</h2>
+    <p>O Portal Flamengo (www.portalflamengo.com.br) est&aacute; comprometido com a prote&ccedil;&atilde;o da privacidade de seus usu&aacute;rios. Esta Pol&iacute;tica de Privacidade descreve como coletamos, utilizamos, armazenamos e protegemos suas informa&ccedil;&otilde;es pessoais, em conformidade com a Lei Geral de Prote&ccedil;&atilde;o de Dados Pessoais (LGPD &mdash; Lei n&ordm; 13.709/2018).</p>
+    <p>Ao utilizar nosso site, voc&ecirc; concorda com as pr&aacute;ticas descritas nesta pol&iacute;tica.</p>
+
+    <h2>2. Dados Coletados</h2>
+    <p>O Portal Flamengo pode coletar os seguintes tipos de dados:</p>
+
+    <h3>2.1. Dados fornecidos pelo usu&aacute;rio</h3>
+    <ul>
+      <li><strong>E-mail:</strong> quando voc&ecirc; se inscreve em nossa newsletter</li>
+      <li><strong>Mensagens:</strong> quando voc&ecirc; entra em contato conosco pelo formul&aacute;rio de contato</li>
+    </ul>
+
+    <h3>2.2. Dados coletados automaticamente</h3>
+    <ul>
+      <li><strong>Dados de navega&ccedil;&atilde;o:</strong> p&aacute;ginas visitadas, tempo de perman&ecirc;ncia, origem do tr&aacute;fego</li>
+      <li><strong>Dados t&eacute;cnicos:</strong> endere&ccedil;o IP, tipo de navegador, sistema operacional, resolu&ccedil;&atilde;o de tela</li>
+      <li><strong>Cookies:</strong> identificadores armazenados no seu navegador para melhorar a experi&ecirc;ncia</li>
+    </ul>
+
+    <h2>3. Google Analytics</h2>
+    <p>O Portal Flamengo utiliza o <strong>Google Analytics</strong> (propriedade do Google LLC) para an&aacute;lise de tr&aacute;fego e comportamento dos usu&aacute;rios. O Google Analytics coleta dados de forma anonimizada, incluindo:</p>
+    <ul>
+      <li>N&uacute;mero de visitantes e sess&otilde;es</li>
+      <li>P&aacute;ginas mais acessadas e tempo de perman&ecirc;ncia</li>
+      <li>Localiza&ccedil;&atilde;o geogr&aacute;fica aproximada (pa&iacute;s/cidade)</li>
+      <li>Dispositivo, navegador e sistema operacional</li>
+      <li>Origem do tr&aacute;fego (busca org&acirc;nica, redes sociais, direto)</li>
+    </ul>
+    <p>Para mais informa&ccedil;&otilde;es sobre como o Google coleta e processa dados, consulte a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Pol&iacute;tica de Privacidade do Google</a>.</p>
+
+    <h2>4. Google AdSense</h2>
+    <p>O Portal Flamengo utiliza o <strong>Google AdSense</strong> para exibi&ccedil;&atilde;o de an&uacute;ncios. O Google AdSense e seus parceiros de publicidade podem utilizar cookies e tecnologias semelhantes para:</p>
+    <ul>
+      <li>Exibir an&uacute;ncios personalizados com base nos seus interesses</li>
+      <li>Limitar o n&uacute;mero de vezes que voc&ecirc; v&ecirc; um an&uacute;ncio</li>
+      <li>Medir a efic&aacute;cia das campanhas publicit&aacute;rias</li>
+    </ul>
+    <p>Voc&ecirc; pode gerenciar suas prefer&ecirc;ncias de an&uacute;ncios personalizados acessando as <a href="https://adssettings.google.com/" target="_blank" rel="noopener">Configura&ccedil;&otilde;es de An&uacute;ncios do Google</a>.</p>
+
+    <h2>5. Finalidade do Uso dos Dados</h2>
+    <p>Os dados coletados s&atilde;o utilizados para as seguintes finalidades:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Dado</th>
+          <th>Finalidade</th>
+          <th>Base Legal (LGPD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>E-mail (newsletter)</td>
+          <td>Envio de conte&uacute;do e novidades</td>
+          <td>Consentimento (Art. 7&ordm;, I)</td>
+        </tr>
+        <tr>
+          <td>Dados de navega&ccedil;&atilde;o</td>
+          <td>Melhoria do site e conte&uacute;do</td>
+          <td>Leg&iacute;timo interesse (Art. 7&ordm;, IX)</td>
+        </tr>
+        <tr>
+          <td>Cookies Analytics</td>
+          <td>An&aacute;lise de tr&aacute;fego e desempenho</td>
+          <td>Leg&iacute;timo interesse (Art. 7&ordm;, IX)</td>
+        </tr>
+        <tr>
+          <td>Cookies AdSense</td>
+          <td>Personaliza&ccedil;&atilde;o de an&uacute;ncios</td>
+          <td>Consentimento (Art. 7&ordm;, I)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>6. Compartilhamento de Dados</h2>
+    <p>O Portal Flamengo n&atilde;o vende, aluga ou comercializa seus dados pessoais. No entanto, alguns dados podem ser compartilhados com:</p>
+    <ul>
+      <li><strong>Google LLC:</strong> atrav&eacute;s do Google Analytics (an&aacute;lise) e Google AdSense (publicidade)</li>
+      <li><strong>Provedores de hospedagem:</strong> para o funcionamento t&eacute;cnico do site</li>
+      <li><strong>Autoridades competentes:</strong> quando exigido por lei ou ordem judicial</li>
+    </ul>
+
+    <h2>7. Cookies</h2>
+    <p>Cookies s&atilde;o pequenos arquivos de texto armazenados no seu navegador. O Portal Flamengo utiliza os seguintes tipos de cookies:</p>
+
+    <h3>7.1. Cookies essenciais</h3>
+    <p>Necess&aacute;rios para o funcionamento b&aacute;sico do site. N&atilde;o podem ser desativados.</p>
+
+    <h3>7.2. Cookies de an&aacute;lise (Google Analytics)</h3>
+    <p>Permitem entender como os visitantes utilizam o site, ajudando a melhorar o conte&uacute;do e a experi&ecirc;ncia de navega&ccedil;&atilde;o.</p>
+
+    <h3>7.3. Cookies de publicidade (Google AdSense)</h3>
+    <p>Utilizados para exibir an&uacute;ncios relevantes com base nos seus interesses e hist&oacute;rico de navega&ccedil;&atilde;o.</p>
+
+    <h3>7.4. Como desativar cookies</h3>
+    <p>Voc&ecirc; pode gerenciar ou desativar cookies a qualquer momento atrav&eacute;s das configura&ccedil;&otilde;es do seu navegador:</p>
+    <ul>
+      <li><strong>Google Chrome:</strong> Configura&ccedil;&otilde;es &gt; Privacidade e seguran&ccedil;a &gt; Cookies</li>
+      <li><strong>Mozilla Firefox:</strong> Configura&ccedil;&otilde;es &gt; Privacidade e Seguran&ccedil;a &gt; Cookies</li>
+      <li><strong>Safari:</strong> Prefer&ecirc;ncias &gt; Privacidade &gt; Gerenciar dados do site</li>
+      <li><strong>Microsoft Edge:</strong> Configura&ccedil;&otilde;es &gt; Privacidade &gt; Cookies</li>
+    </ul>
+    <p><strong>Nota:</strong> A desativa&ccedil;&atilde;o de cookies pode afetar a funcionalidade de algumas partes do site.</p>
+
+    <h2>8. Seus Direitos (LGPD)</h2>
+    <p>Em conformidade com a Lei Geral de Prote&ccedil;&atilde;o de Dados (Lei n&ordm; 13.709/2018), voc&ecirc; tem os seguintes direitos sobre seus dados pessoais:</p>
+    <ul>
+      <li><strong>Acesso:</strong> solicitar informa&ccedil;&otilde;es sobre quais dados pessoais possu&iacute;mos sobre voc&ecirc;</li>
+      <li><strong>Corre&ccedil;&atilde;o:</strong> solicitar a corre&ccedil;&atilde;o de dados incompletos, inexatos ou desatualizados</li>
+      <li><strong>Exclus&atilde;o:</strong> solicitar a exclus&atilde;o dos seus dados pessoais</li>
+      <li><strong>Portabilidade:</strong> solicitar a transfer&ecirc;ncia dos seus dados para outro fornecedor</li>
+      <li><strong>Revoga&ccedil;&atilde;o do consentimento:</strong> retirar o consentimento a qualquer momento</li>
+      <li><strong>Oposi&ccedil;&atilde;o:</strong> opor-se ao tratamento de dados em determinadas circunst&acirc;ncias</li>
+      <li><strong>Informa&ccedil;&atilde;o:</strong> ser informado sobre as entidades com as quais seus dados foram compartilhados</li>
+    </ul>
+    <p>Para exercer qualquer um desses direitos, entre em contato conosco pelo e-mail informado na se&ccedil;&atilde;o de contato abaixo.</p>
+
+    <h2>9. Seguran&ccedil;a dos Dados</h2>
+    <p>O Portal Flamengo adota medidas t&eacute;cnicas e organizacionais adequadas para proteger seus dados pessoais contra acesso n&atilde;o autorizado, perda, altera&ccedil;&atilde;o ou destrui&ccedil;&atilde;o. No entanto, nenhuma transmiss&atilde;o de dados pela internet &eacute; 100% segura, e n&atilde;o podemos garantir seguran&ccedil;a absoluta.</p>
+
+    <h2>10. Reten&ccedil;&atilde;o de Dados</h2>
+    <p>Os dados pessoais s&atilde;o mantidos apenas pelo tempo necess&aacute;rio para cumprir as finalidades descritas nesta pol&iacute;tica:</p>
+    <ul>
+      <li><strong>E-mail de newsletter:</strong> at&eacute; o cancelamento da inscri&ccedil;&atilde;o pelo usu&aacute;rio</li>
+      <li><strong>Dados de analytics:</strong> conforme pol&iacute;tica de reten&ccedil;&atilde;o do Google Analytics (26 meses)</li>
+      <li><strong>Cookies:</strong> conforme validade de cada cookie (varia de sess&atilde;o a 2 anos)</li>
+    </ul>
+
+    <h2>11. Menores de Idade</h2>
+    <p>O Portal Flamengo n&atilde;o coleta intencionalmente dados pessoais de menores de 18 anos. Caso identifiquemos que dados de um menor foram coletados sem consentimento dos respons&aacute;veis, esses dados ser&atilde;o prontamente exclu&iacute;dos.</p>
+
+    <h2>12. Altera&ccedil;&otilde;es nesta Pol&iacute;tica</h2>
+    <p>O Portal Flamengo reserva-se o direito de atualizar esta Pol&iacute;tica de Privacidade a qualquer momento. Recomendamos que voc&ecirc; revise esta p&aacute;gina periodicamente. Altera&ccedil;&otilde;es significativas ser&atilde;o comunicadas de forma vis&iacute;vel no site.</p>
+
+    <h2>13. Contato &mdash; Encarregado de Dados (DPO)</h2>
+    <p>Para d&uacute;vidas, solicita&ccedil;&otilde;es ou reclama&ccedil;&otilde;es relacionadas &agrave; privacidade e prote&ccedil;&atilde;o de dados pessoais, entre em contato com nosso Encarregado de Dados:</p>
+    <p><strong>E-mail:</strong> <a href="mailto:contato@portalflamengo.com.br">contato@portalflamengo.com.br</a></p>
+    <p>Voc&ecirc; tamb&eacute;m pode registrar uma reclama&ccedil;&atilde;o junto &agrave; <strong>Autoridade Nacional de Prote&ccedil;&atilde;o de Dados (ANPD)</strong> caso entenda que seus direitos n&atilde;o foram atendidos: <a href="https://www.gov.br/anpd/" target="_blank" rel="noopener">www.gov.br/anpd</a></p>
+
+    <div class="legal-date">
+      <p>&Uacute;ltima atualiza&ccedil;&atilde;o: Mar&ccedil;o de 2026</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Ad Banner -->
+<div style="text-align:center;padding:20px 0;max-width:1240px;margin:0 auto;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1286595053228930" data-ad-slot="0987654321" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Portal <span>Flamengo</span></h3>
+        <p>O maior portal de conte&uacute;do sobre o Clube de Regatas do Flamengo. Biografias, escala&ccedil;&otilde;es hist&oacute;ricas, curiosidades e tudo sobre o maior clube do Brasil desde 1895.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="../jogadores/">Jogadores</a>
+        <a href="../tecnicos/">T&eacute;cnicos</a>
+        <a href="../escalacoes/">Escala&ccedil;&otilde;es</a>
+        <a href="../presidentes/">Presidentes</a>
+        <a href="../momentos-historicos/">Momentos Hist&oacute;ricos</a>
+        <a href="../curiosidades/">Curiosidades</a>
+      </div>
+      <div class="footer-col">
+        <h4>Conte&uacute;do</h4>
+        <a href="../origem/">Origem do Clube</a>
+        <a href="../noticias/">&Uacute;ltimas Not&iacute;cias</a>
+        <a href="../titulos/">T&iacute;tulos</a>
+        <a href="../artigos/">Artigos</a>
+      </div>
+      <div class="footer-col">
+        <h4>Portal</h4>
+        <a href="../sobre/">Sobre</a>
+        <a href="../contato/">Contato</a>
+        <a href="../termos-de-uso/">Termos de Uso</a>
+        <a href="../politica-privacidade/">Privacidade</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025-2026 Portal Flamengo. Todos os direitos reservados.</span>
+      <span>Site n&atilde;o oficial. Feito por torcedores, para torcedores.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay">
+  <span class="search-close" onclick="toggleSearch()">&times;</span>
+  <div class="search-box">
+    <input type="text" placeholder="Buscar jogadores, t&eacute;cnicos, curiosidades..." autofocus>
+  </div>
+</div>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav-overlay" id="mobileOverlay" onclick="toggleMobileNav()"></div>
+<nav class="mobile-nav" id="mobileNav">
+  <span class="mobile-nav-close" onclick="toggleMobileNav()">&times;</span>
+  <a href="../">In&iacute;cio</a>
+  <a href="../jogadores/">Jogadores</a>
+  <a href="../tecnicos/">T&eacute;cnicos</a>
+  <a href="../escalacoes/">Escala&ccedil;&otilde;es</a>
+  <a href="../presidentes/">Presidentes</a>
+  <a href="../curiosidades/">Curiosidades</a>
+  <a href="../momentos-historicos/">Momentos Hist&oacute;ricos</a>
+  <a href="../origem/">Origem</a>
+  <a href="../noticias/">Not&iacute;cias</a>
+  <a href="../contato/">Contato</a>
+</nav>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
+
+<script>
+// Date
+const d = new Date();
+const meses = ['Janeiro','Fevereiro','Mar\u00e7o','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+const dias = ['Domingo','Segunda-feira','Ter\u00e7a-feira','Quarta-feira','Quinta-feira','Sexta-feira','S\u00e1bado'];
+document.getElementById('currentDate').textContent = `${dias[d.getDay()]}, ${d.getDate()} de ${meses[d.getMonth()]} de ${d.getFullYear()}`;
+
+// Search
+function toggleSearch() {
+  document.getElementById('searchOverlay').classList.toggle('active');
+  if (document.getElementById('searchOverlay').classList.contains('active')) {
+    document.getElementById('searchOverlay').querySelector('input').focus();
+  }
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.getElementById('searchOverlay').classList.remove('active');
+    document.getElementById('mobileNav').classList.remove('active');
+    document.getElementById('mobileOverlay').classList.remove('active');
+  }
+});
+
+// Mobile Nav
+function toggleMobileNav() {
+  document.getElementById('mobileNav').classList.toggle('active');
+  document.getElementById('mobileOverlay').classList.toggle('active');
+}
+
+// Scroll to top
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollTop');
+  if (window.scrollY > 600) btn.classList.add('visible');
+  else btn.classList.remove('visible');
+});
+</script>
+
+</body>
+</html>

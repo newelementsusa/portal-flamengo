@@ -178,6 +178,36 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
 .topbar-right { display:flex; gap:16px; align-items:center; }
 .topbar-date { color: rgba(255,255,255,.35); }
 
+/* ========== HEADER TICKER ========== */
+.header-ticker {
+  background: var(--red-dark);
+  padding: 5px 0;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.header-ticker-track {
+  display: flex;
+  animation: headerTickerScroll 35s linear infinite;
+}
+.header-ticker-item {
+  white-space: nowrap;
+  color: rgba(255,255,255,.85);
+  font-size: .75rem;
+  padding: 0 30px;
+  font-weight: 500;
+  letter-spacing: .3px;
+}
+.header-ticker-item::before {
+  content: '⚽';
+  margin-right: 6px;
+  font-size: .65rem;
+}
+@keyframes headerTickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ========== HEADER ========== */
 .header {
   background: var(--red);

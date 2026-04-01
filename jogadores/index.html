@@ -155,6 +155,36 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
 .topbar-right { display:flex; gap:16px; align-items:center; }
 .topbar-date { color: rgba(255,255,255,.35); }
 
+/* ========== HEADER TICKER ========== */
+.header-ticker {
+  background: var(--red-dark);
+  padding: 5px 0;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.header-ticker-track {
+  display: flex;
+  animation: headerTickerScroll 35s linear infinite;
+}
+.header-ticker-item {
+  white-space: nowrap;
+  color: rgba(255,255,255,.85);
+  font-size: .75rem;
+  padding: 0 30px;
+  font-weight: 500;
+  letter-spacing: .3px;
+}
+.header-ticker-item::before {
+  content: '⚽';
+  margin-right: 6px;
+  font-size: .65rem;
+}
+@keyframes headerTickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ========== HEADER ========== */
 .header {
   background: var(--red);
@@ -878,6 +908,27 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
 .scroll-top.visible { opacity: 1; visibility: visible; }
 .scroll-top:hover { background: var(--black); transform: translateY(-3px); }
 
+/* ========== BIO LINK ========== */
+.player-bio-link { color: var(--red); text-decoration: none; font-weight: 600; }
+.player-bio-link:hover { text-decoration: underline; }
+.bio-badge {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  font-size: .55rem;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-left: 6px;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+.idol-card-link { display: block; color: inherit; text-decoration: none; }
+.idol-card-link .idol-card-name { transition: color var(--transition); }
+.idol-card-link:hover .idol-card-name { color: var(--gold); }
+
 /* ========== NO RESULTS ========== */
 .no-results {
   display: none;
@@ -963,6 +1014,24 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
   </div>
 </header>
 
+<!-- HEADER TICKER -->
+<div class="header-ticker">
+  <div class="header-ticker-track">
+    <span class="header-ticker-item">Flamengo campeão carioca 2026 — 40º título</span>
+    <span class="header-ticker-item">Leonardo Jardim é o novo técnico do Mengão</span>
+    <span class="header-ticker-item">Libertadores 2026: Grupo A — Estudiantes, Cusco e Medellín</span>
+    <span class="header-ticker-item">Pedro artilheiro com 8 gols na temporada</span>
+    <span class="header-ticker-item">Lucas Paquetá de volta ao Flamengo</span>
+    <span class="header-ticker-item">Vitão reforça a zaga rubro-negra</span>
+    <span class="header-ticker-item">Flamengo campeão carioca 2026 — 40º título</span>
+    <span class="header-ticker-item">Leonardo Jardim é o novo técnico do Mengão</span>
+    <span class="header-ticker-item">Libertadores 2026: Grupo A — Estudiantes, Cusco e Medellín</span>
+    <span class="header-ticker-item">Pedro artilheiro com 8 gols na temporada</span>
+    <span class="header-ticker-item">Lucas Paquetá de volta ao Flamengo</span>
+    <span class="header-ticker-item">Vitão reforça a zaga rubro-negra</span>
+  </div>
+</div>
+
 <!-- HERO -->
 <section class="hero-jogadores">
   <div class="hero-jogadores-bg">
@@ -1046,6 +1115,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
     </div>
     <div class="idolos-grid">
 
+      <a href="zico/" class="idol-card-link">
       <div class="idol-card" data-name="Zico Arthur Antunes Coimbra">
         <div class="idol-card-img">
           <img src="../img/jogadores/zico.jpg" alt="Zico - maior idolo do Flamengo" loading="lazy">
@@ -1056,7 +1126,9 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </div>
         </div>
       </div>
+      </a>
 
+      <a href="leonidas/" class="idol-card-link">
       <div class="idol-card" data-name="Leonidas da Silva Diamante Negro">
         <div class="idol-card-img">
           <img src="../img/jogadores/leonidas.jpg" alt="Leonidas da Silva" loading="lazy">
@@ -1067,7 +1139,9 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </div>
         </div>
       </div>
+      </a>
 
+      <a href="junior/" class="idol-card-link">
       <div class="idol-card" data-name="Junior Leovegildo Lins da Gama">
         <div class="idol-card-img">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/J%C3%BAnior_%28footballer%2C_born_1954%29.jpg/220px-J%C3%BAnior_%28footballer%2C_born_1954%29.jpg" alt="Junior lateral do Flamengo" loading="lazy">
@@ -1078,7 +1152,9 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </div>
         </div>
       </div>
+      </a>
 
+      <a href="gabigol/" class="idol-card-link">
       <div class="idol-card" data-name="Gabigol Gabriel Barbosa">
         <div class="idol-card-img">
           <img src="../img/jogadores/gabigol.jpg" alt="Gabigol heroi da Libertadores 2019" loading="lazy">
@@ -1089,6 +1165,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </div>
         </div>
       </div>
+      </a>
 
       <div class="idol-card" data-name="Zizinho Thomaz Soares da Silva">
         <div class="idol-card-img">
@@ -1101,6 +1178,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         </div>
       </div>
 
+      <a href="romario/" class="idol-card-link">
       <div class="idol-card" data-name="Romario de Souza Faria Baixinho">
         <div class="idol-card-img">
           <img src="../img/jogadores/romario.jpg" alt="Romario atacante do Flamengo" loading="lazy">
@@ -1111,7 +1189,9 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </div>
         </div>
       </div>
+      </a>
 
+      <a href="ronaldinho-gaucho/" class="idol-card-link">
       <div class="idol-card" data-name="Ronaldinho Gaucho Ronaldo de Assis Moreira">
         <div class="idol-card-img">
           <img src="../img/jogadores/ronaldinho-gaucho.jpg" alt="Ronaldinho Gaucho" loading="lazy">
@@ -1122,7 +1202,9 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </div>
         </div>
       </div>
+      </a>
 
+      <a href="adriano/" class="idol-card-link">
       <div class="idol-card" data-name="Adriano Imperador Leite Ribeiro">
         <div class="idol-card-img">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adriano_Ribeiro_Inter.jpg/220px-Adriano_Ribeiro_Inter.jpg" alt="Adriano Imperador" loading="lazy">
@@ -1133,7 +1215,9 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </div>
         </div>
       </div>
+      </a>
 
+      <a href="petkovic/" class="idol-card-link">
       <div class="idol-card" data-name="Petkovic Dejan Pet">
         <div class="idol-card-img">
           <img src="../img/jogadores/petkovic.png" alt="Petkovic meia do Flamengo" loading="lazy">
@@ -1144,7 +1228,9 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </div>
         </div>
       </div>
+      </a>
 
+      <a href="vinicius-junior/" class="idol-card-link">
       <div class="idol-card" data-name="Vinicius Junior">
         <div class="idol-card-img">
           <img src="../img/jogadores/vinicius-junior.jpg" alt="Vinicius Junior" loading="lazy">
@@ -1155,6 +1241,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </div>
         </div>
       </div>
+      </a>
 
     </div>
   </div>
@@ -1385,6 +1472,38 @@ const playerPhotos = {
   "Willian Arao": "../img/jogadores/willian-arao.jpg"
 };
 
+// Slugify function - converts player name to URL slug
+function slugify(text) {
+  return text.normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .toLowerCase().trim().replace(/[^\w\s-]/g,'').replace(/[-\s]+/g,'-');
+}
+
+// Special slug overrides for players with custom folder names
+const slugOverrides = {
+  "Adriano Imperador":"adriano","Dejan Petkovic":"petkovic",
+  "Giorgian de Arrascaeta":"arrascaeta","Leonidas da Silva":"leonidas",
+  "Jose Leandro":"leandro","Leandro Salino":"leandro",
+  "Domingos da Guia":"domingos-da-guia","Jair Rosa Pinto":"jair-rosa-pinto",
+  "Vagner Love":"vagner-love","Diego Ribas":"diego-ribas",
+  "David Luiz":"david-luiz","Everton Ribeiro":"everton-ribeiro",
+  "Bruno Henrique":"bruno-henrique","Filipe Luis":"filipe-luis",
+  "Lucas Paqueta":"lucas-paqueta","Paolo Guerrero":"paolo-guerrero",
+  "Willian Arao":"willian-arao","Emerson Sheik":"emerson-sheik",
+  "Felipe Melo":"felipe-melo","Arturo Vidal":"arturo-vidal",
+  "Andreas Pereira":"andreas-pereira","Ayrton Lucas":"ayrton-lucas",
+  "Ronaldo Angelim":"ronaldo-angelim","Rodrigo Caio":"rodrigo-caio",
+  "Diego Alves":"diego-alves","Thiago Maia":"thiago-maia",
+  "Matheus Franca":"matheus-franca","Leo Moura":"leo-moura",
+  "Fausto dos Santos":"fausto","Vinicius Junior":"vinicius-junior",
+  "Ronaldinho Gaucho":"ronaldinho-gaucho","Nicolas de la Cruz":"nicolas-de-la-cruz",
+  "Dida Goleiro":"dida-goleiro","Pablo Mari":"pablo-mari"
+};
+
+// All players have biography pages now
+function getPlayerSlug(name) {
+  return slugOverrides[name] || slugify(name);
+}
+
 // Featured players (highlighted in the list)
 const featuredPlayers = new Set([
   "Zico","Leonidas da Silva","Junior","Gabigol","Zizinho","Domingos da Guia","Garrincha","Romario","Ronaldinho Gaucho","Adriano Imperador","Dejan Petkovic","Bebeto","Leonardo","Cafu","Socrates","Zagallo","Nunes","Adilio","Mozer","Jair Rosa Pinto","Fausto dos Santos","David Luiz","Everton Ribeiro","Giorgian de Arrascaeta","Bruno Henrique","Pedro","Gerson","Gerson Santos","Vagner Love","Diego Ribas","Vinicius Junior","Renato Gaucho","Ronaldao","Emerson Sheik","Felipe Melo","Arturo Vidal","Andreas Pereira","Lucas Paqueta","Filipe Luis","Paolo Guerrero","Denilson","Djalminha","Savio","Leo Moura","Juan Silveira","Ronaldo Angelim","Hernane Brocador","Kenedy","Reinier","Matheus Franca","Aldair","Carlos Alberto Torres","Evaristo de Macedo","Diego Alves","Rodrigo Caio","Ayrton Lucas","Thiago Maia","Willian Arao"
@@ -1439,12 +1558,13 @@ function renderPlayerList() {
 
     players.forEach(function(name) {
       var isFeatured = featuredPlayers.has(name);
-      html += '<div class="player-mini' + (isFeatured ? ' featured' : '') + '" data-name="' + name + '">';
+      var slug = getPlayerSlug(name);
+      html += '<a href="' + slug + '/" class="player-mini' + (isFeatured ? ' featured' : '') + '" data-name="' + name + '" style="text-decoration:none;color:inherit;display:flex;">';
       html += '<div class="player-mini-photo">' + getPlayerPhoto(name) + '</div>';
       html += '<div class="player-mini-info">';
       html += '<div class="player-mini-name">' + name + '</div>';
       html += '</div>';
-      html += '</div>';
+      html += '</a>';
     });
 
     html += '</div></div>';

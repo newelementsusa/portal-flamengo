@@ -195,6 +195,36 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
 .topbar-right { display:flex; gap:16px; align-items:center; }
 .topbar-date { color: rgba(255,255,255,.35); }
 
+/* ========== HEADER TICKER ========== */
+.header-ticker {
+  background: var(--red-dark);
+  padding: 5px 0;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.header-ticker-track {
+  display: flex;
+  animation: headerTickerScroll 35s linear infinite;
+}
+.header-ticker-item {
+  white-space: nowrap;
+  color: rgba(255,255,255,.85);
+  font-size: .75rem;
+  padding: 0 30px;
+  font-weight: 500;
+  letter-spacing: .3px;
+}
+.header-ticker-item::before {
+  content: '⚽';
+  margin-right: 6px;
+  font-size: .65rem;
+}
+@keyframes headerTickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ========== HEADER ========== */
 .header {
   background: var(--red);
@@ -1130,133 +1160,133 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         <tbody>
           <tr>
             <td>1</td>
-            <td><span class="pres-name">Domingos Marques de Azevedo</span></td>
+            <td><a href="domingos-marques-de-azevedo/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Domingos Marques de Azevedo</a></td>
             <td class="pres-period">1895 - 1897</td>
             <td><span class="pres-note">Primeiro presidente</span></td>
           </tr>
           <tr>
             <td>2</td>
-            <td><span class="pres-name">Augusto Lopes da Silveira</span></td>
+            <td><a href="augusto-lopes-da-silveira/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Augusto Lopes da Silveira</a></td>
             <td class="pres-period">1898</td>
             <td></td>
           </tr>
           <tr>
             <td>3</td>
-            <td><span class="pres-name">Julio Goncalves de A. Furtado</span></td>
+            <td><a href="julio-goncalves-de-a-furtado/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Julio Goncalves de A. Furtado</a></td>
             <td class="pres-period">1899</td>
             <td></td>
           </tr>
           <tr>
             <td>4</td>
-            <td><span class="pres-name">Antonio Pereira Viana Filho</span></td>
+            <td><a href="antonio-pereira-viana-filho/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Antonio Pereira Viana Filho</a></td>
             <td class="pres-period">1900</td>
             <td></td>
           </tr>
           <tr>
             <td>5</td>
-            <td><span class="pres-name">Jacintho Pinto de Lima Junior</span></td>
+            <td><a href="jacintho-pinto-de-lima-junior/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Jacintho Pinto de Lima Junior</a></td>
             <td class="pres-period">1900</td>
             <td></td>
           </tr>
           <tr>
             <td>6</td>
-            <td><span class="pres-name">Fidelcino da Silva Leitao</span></td>
+            <td><a href="fidelcino-da-silva-leitao/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Fidelcino da Silva Leitao</a></td>
             <td class="pres-period">1901</td>
             <td></td>
           </tr>
           <tr class="highlighted">
             <td>7</td>
-            <td><span class="pres-name">Virgilio Leite de Oliveira e Silva</span></td>
+            <td><a href="virgilio-leite-de-oliveira-e-silva/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Virgilio Leite de Oliveira e Silva</a></td>
             <td class="pres-period">1902</td>
             <td><span class="pres-note">3 mandatos no total</span></td>
           </tr>
           <tr>
             <td>8</td>
-            <td><span class="pres-name">Arthur John Lawrence Gibbons</span></td>
+            <td><a href="arthur-john-lawrence-gibbons/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Arthur John Lawrence Gibbons</a></td>
             <td class="pres-period">1903</td>
             <td></td>
           </tr>
           <tr>
             <td>9</td>
-            <td><span class="pres-name">Mario Espinola</span></td>
+            <td><a href="mario-espinola/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Mario Espinola</a></td>
             <td class="pres-period">1904</td>
             <td></td>
           </tr>
           <tr>
             <td>10</td>
-            <td><span class="pres-name">Jose Agostinho Pereira da Cunha</span></td>
+            <td><a href="jose-agostinho-pereira-da-cunha/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Jose Agostinho Pereira da Cunha</a></td>
             <td class="pres-period">1905</td>
             <td></td>
           </tr>
           <tr>
             <td>11</td>
-            <td><span class="pres-name">Manuel Alves de Cruz Rios</span></td>
+            <td><a href="manuel-alves-de-cruz-rios/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Manuel Alves de Cruz Rios</a></td>
             <td class="pres-period">1905</td>
             <td></td>
           </tr>
           <tr>
             <td>12</td>
-            <td><span class="pres-name">Francis Hamilton Walter</span></td>
+            <td><a href="francis-hamilton-walter/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Francis Hamilton Walter</a></td>
             <td class="pres-period">1906</td>
             <td></td>
           </tr>
           <tr class="highlighted">
             <td>13</td>
-            <td><span class="pres-name">Virgilio Leite de Oliveira e Silva</span></td>
+            <td><a href="virgilio-leite-de-oliveira-e-silva/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Virgilio Leite de Oliveira e Silva</a></td>
             <td class="pres-period">1907 - 1911</td>
             <td><span class="pres-note">2o mandato - maior ate entao</span></td>
           </tr>
           <tr>
             <td>14</td>
-            <td><span class="pres-name">Edmundo de Azurem Furtado</span></td>
+            <td><a href="edmundo-de-azurem-furtado/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Edmundo de Azurem Furtado</a></td>
             <td class="pres-period">1912</td>
             <td></td>
           </tr>
           <tr class="highlighted">
             <td>15</td>
-            <td><span class="pres-name">Virgilio Leite de Oliveira e Silva</span></td>
+            <td><a href="virgilio-leite-de-oliveira-e-silva/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Virgilio Leite de Oliveira e Silva</a></td>
             <td class="pres-period">1913</td>
             <td><span class="pres-note">3o mandato</span></td>
           </tr>
           <tr>
             <td>16</td>
-            <td><span class="pres-name">Jose Pimenta de Melo Filho</span></td>
+            <td><a href="jose-pimenta-de-melo-filho/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Jose Pimenta de Melo Filho</a></td>
             <td class="pres-period">1913</td>
             <td></td>
           </tr>
           <tr>
             <td>17</td>
-            <td><span class="pres-name">Edmundo de Azurem Furtado</span></td>
+            <td><a href="edmundo-de-azurem-furtado/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Edmundo de Azurem Furtado</a></td>
             <td class="pres-period">1914</td>
             <td><span class="pres-note">2o mandato</span></td>
           </tr>
           <tr>
             <td>18</td>
-            <td><span class="pres-name">Virgilio Leite de Oliveira e Silva</span></td>
+            <td><a href="virgilio-leite-de-oliveira-e-silva/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Virgilio Leite de Oliveira e Silva</a></td>
             <td class="pres-period">1915</td>
             <td><span class="pres-note">4o mandato</span></td>
           </tr>
           <tr>
             <td>19</td>
-            <td><span class="pres-name">Edmundo de Azurem Furtado</span></td>
+            <td><a href="edmundo-de-azurem-furtado/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Edmundo de Azurem Furtado</a></td>
             <td class="pres-period">1915</td>
             <td><span class="pres-note">3o mandato</span></td>
           </tr>
           <tr>
             <td>20</td>
-            <td><span class="pres-name">Raul Ferreira Serpa</span></td>
+            <td><a href="raul-ferreira-serpa/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Raul Ferreira Serpa</a></td>
             <td class="pres-period">1916</td>
             <td></td>
           </tr>
           <tr>
             <td>21</td>
-            <td><span class="pres-name">Carlos Leclerc Castelo Branco</span></td>
+            <td><a href="carlos-leclerc-castelo-branco/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Carlos Leclerc Castelo Branco</a></td>
             <td class="pres-period">1917</td>
             <td></td>
           </tr>
           <tr>
             <td>22</td>
-            <td><span class="pres-name">Alberto Burle Figueiredo</span></td>
+            <td><a href="alberto-burle-figueiredo/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Alberto Burle Figueiredo</a></td>
             <td class="pres-period">1918 - 1920</td>
             <td></td>
           </tr>
@@ -1279,109 +1309,109 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         <tbody>
           <tr>
             <td>23</td>
-            <td><span class="pres-name">Faustino Esposel</span></td>
+            <td><a href="faustino-esposel/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Faustino Esposel</a></td>
             <td class="pres-period">1921</td>
             <td></td>
           </tr>
           <tr>
             <td>24</td>
-            <td><span class="pres-name">Alberto Burle Figueiredo</span></td>
+            <td><a href="alberto-burle-figueiredo/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Alberto Burle Figueiredo</a></td>
             <td class="pres-period">1922</td>
             <td><span class="pres-note">2o mandato</span></td>
           </tr>
           <tr>
             <td>25</td>
-            <td><span class="pres-name">Julio Benedito Otoni</span></td>
+            <td><a href="julio-benedito-otoni/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Julio Benedito Otoni</a></td>
             <td class="pres-period">1923 - 1924</td>
             <td></td>
           </tr>
           <tr>
             <td>26</td>
-            <td><span class="pres-name">Faustino Esposel</span></td>
+            <td><a href="faustino-esposel/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Faustino Esposel</a></td>
             <td class="pres-period">1924 - 1927</td>
             <td><span class="pres-note">2o mandato</span></td>
           </tr>
           <tr>
             <td>27</td>
-            <td><span class="pres-name">Alberto Borgerth</span></td>
+            <td><a href="alberto-borgerth/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Alberto Borgerth</a></td>
             <td class="pres-period">1927</td>
             <td></td>
           </tr>
           <tr>
             <td>28</td>
-            <td><span class="pres-name">Nillor Rollin Pinheiro</span></td>
+            <td><a href="nillor-rollin-pinheiro/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Nillor Rollin Pinheiro</a></td>
             <td class="pres-period">1927</td>
             <td></td>
           </tr>
           <tr>
             <td>29</td>
-            <td><span class="pres-name">Osvaldo dos Santos Jacinto</span></td>
+            <td><a href="osvaldo-dos-santos-jacinto/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Osvaldo dos Santos Jacinto</a></td>
             <td class="pres-period">1928 - 1929</td>
             <td></td>
           </tr>
           <tr>
             <td>30</td>
-            <td><span class="pres-name">Carlos Eduardo Facanha Mamede</span></td>
+            <td><a href="carlos-eduardo-facanha-mamede/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Carlos Eduardo Facanha Mamede</a></td>
             <td class="pres-period">1929</td>
             <td></td>
           </tr>
           <tr>
             <td>31</td>
-            <td><span class="pres-name">Alfredo Dolabella Portela</span></td>
+            <td><a href="alfredo-dolabella-portela/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Alfredo Dolabella Portela</a></td>
             <td class="pres-period">1930</td>
             <td></td>
           </tr>
           <tr>
             <td>32</td>
-            <td><span class="pres-name">Manuel Joaquim de Almeida</span></td>
+            <td><a href="manuel-joaquim-de-almeida/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Manuel Joaquim de Almeida</a></td>
             <td class="pres-period">1930</td>
             <td></td>
           </tr>
           <tr>
             <td>33</td>
-            <td><span class="pres-name">Carlos Eduardo Facanha Mamede</span></td>
+            <td><a href="carlos-eduardo-facanha-mamede/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Carlos Eduardo Facanha Mamede</a></td>
             <td class="pres-period">1931</td>
             <td><span class="pres-note">2o mandato</span></td>
           </tr>
           <tr>
             <td>34</td>
-            <td><span class="pres-name">Rubens de Campos Farrula</span></td>
+            <td><a href="rubens-de-campos-farrula/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Rubens de Campos Farrula</a></td>
             <td class="pres-period">1931</td>
             <td></td>
           </tr>
           <tr>
             <td>35</td>
-            <td><span class="pres-name">Jose de Oliveira Santos</span></td>
+            <td><a href="jose-de-oliveira-santos/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Jose de Oliveira Santos</a></td>
             <td class="pres-period">1931</td>
             <td></td>
           </tr>
           <tr>
             <td>36</td>
-            <td><span class="pres-name">Artur Lobo da Silva</span></td>
+            <td><a href="artur-lobo-da-silva/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Artur Lobo da Silva</a></td>
             <td class="pres-period">1932</td>
             <td></td>
           </tr>
           <tr>
             <td>37</td>
-            <td><span class="pres-name">Jose de Oliveira Santos</span></td>
+            <td><a href="jose-de-oliveira-santos/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Jose de Oliveira Santos</a></td>
             <td class="pres-period">1933</td>
             <td><span class="pres-note">2o mandato</span></td>
           </tr>
           <tr>
             <td>38</td>
-            <td><span class="pres-name">Pascoal Segreto Sobrinho</span></td>
+            <td><a href="pascoal-segreto-sobrinho/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Pascoal Segreto Sobrinho</a></td>
             <td class="pres-period">1933</td>
             <td></td>
           </tr>
           <tr class="highlighted">
             <td>39</td>
-            <td><span class="pres-name">Jose Bastos Padilha</span></td>
+            <td><a href="jose-bastos-padilha/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Jose Bastos Padilha</a></td>
             <td class="pres-period">1933 - 1937</td>
             <td><span class="pres-note">Profissionalizou o futebol</span></td>
           </tr>
           <tr>
             <td>40</td>
-            <td><span class="pres-name">Raul Dias Goncalves</span></td>
+            <td><a href="raul-dias-goncalves/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Raul Dias Goncalves</a></td>
             <td class="pres-period">1937 - 1938</td>
             <td></td>
           </tr>
@@ -1404,79 +1434,79 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         <tbody>
           <tr>
             <td>41</td>
-            <td><span class="pres-name">Gustavo Adolfo de Carvalho</span></td>
+            <td><a href="gustavo-adolfo-de-carvalho/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Gustavo Adolfo de Carvalho</a></td>
             <td class="pres-period">1939 - 1942</td>
             <td></td>
           </tr>
           <tr>
             <td>42</td>
-            <td><span class="pres-name">Dario de Melo Pinto</span></td>
+            <td><a href="dario-de-melo-pinto/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Dario de Melo Pinto</a></td>
             <td class="pres-period">1943 - 1944</td>
             <td></td>
           </tr>
           <tr>
             <td>43</td>
-            <td><span class="pres-name">Marino Machado de Oliveira</span></td>
+            <td><a href="marino-machado-de-oliveira/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Marino Machado de Oliveira</a></td>
             <td class="pres-period">1945 - 1946</td>
             <td></td>
           </tr>
           <tr>
             <td>44</td>
-            <td><span class="pres-name">Hilton Goncalves dos Santos</span></td>
+            <td><a href="hilton-goncalves-dos-santos/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Hilton Goncalves dos Santos</a></td>
             <td class="pres-period">1946</td>
             <td></td>
           </tr>
           <tr>
             <td>45</td>
-            <td><span class="pres-name">Orsini de Araujo Coriolano</span></td>
+            <td><a href="orsini-de-araujo-coriolano/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Orsini de Araujo Coriolano</a></td>
             <td class="pres-period">1947 - 1948</td>
             <td></td>
           </tr>
           <tr>
             <td>46</td>
-            <td><span class="pres-name">Dario de Melo Pinto</span></td>
+            <td><a href="dario-de-melo-pinto/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Dario de Melo Pinto</a></td>
             <td class="pres-period">1949 - 1950</td>
             <td><span class="pres-note">2o mandato</span></td>
           </tr>
           <tr class="highlighted">
             <td>47</td>
-            <td><span class="pres-name">Gilberto Ferreira Cardoso</span></td>
+            <td><a href="gilberto-ferreira-cardoso/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Gilberto Ferreira Cardoso</a></td>
             <td class="pres-period">1951 - 1955</td>
             <td><span class="pres-note">Epoca de ouro do futebol</span></td>
           </tr>
           <tr>
             <td>48</td>
-            <td><span class="pres-name">Antenor Coelho</span></td>
+            <td><a href="antenor-coelho/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Antenor Coelho</a></td>
             <td class="pres-period">1955</td>
             <td></td>
           </tr>
           <tr>
             <td>49</td>
-            <td><span class="pres-name">Jose Alves Morais</span></td>
+            <td><a href="jose-alves-morais/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Jose Alves Morais</a></td>
             <td class="pres-period">1956 - 1957</td>
             <td></td>
           </tr>
           <tr>
             <td>50</td>
-            <td><span class="pres-name">Hilton Goncalves dos Santos</span></td>
+            <td><a href="hilton-goncalves-dos-santos/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Hilton Goncalves dos Santos</a></td>
             <td class="pres-period">1958 - 1959</td>
             <td><span class="pres-note">2o mandato</span></td>
           </tr>
           <tr>
             <td>51</td>
-            <td><span class="pres-name">George da Silva Fernandes</span></td>
+            <td><a href="george-da-silva-fernandes/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">George da Silva Fernandes</a></td>
             <td class="pres-period">1960</td>
             <td></td>
           </tr>
           <tr>
             <td>52</td>
-            <td><span class="pres-name">Oswaldo Gudolle Aranha</span></td>
+            <td><a href="oswaldo-gudolle-aranha/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Oswaldo Gudolle Aranha</a></td>
             <td class="pres-period">1961</td>
             <td></td>
           </tr>
           <tr>
             <td>53</td>
-            <td><span class="pres-name">Fadel Fadel</span></td>
+            <td><a href="fadel-fadel/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Fadel Fadel</a></td>
             <td class="pres-period">1962 - 1965</td>
             <td></td>
           </tr>
@@ -1499,25 +1529,25 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         <tbody>
           <tr>
             <td>54</td>
-            <td><span class="pres-name">Luis Roberto Veiga Brito</span></td>
+            <td><a href="luis-roberto-veiga-brito/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Luis Roberto Veiga Brito</a></td>
             <td class="pres-period">1966 - 1968</td>
             <td></td>
           </tr>
           <tr>
             <td>55</td>
-            <td><span class="pres-name">Andre Gustavo Richer</span></td>
+            <td><a href="andre-gustavo-richer/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Andre Gustavo Richer</a></td>
             <td class="pres-period">1969 - 1970</td>
             <td></td>
           </tr>
           <tr>
             <td>56</td>
-            <td><span class="pres-name">Luis Roberto Veiga Brito</span></td>
+            <td><a href="luis-roberto-veiga-brito/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Luis Roberto Veiga Brito</a></td>
             <td class="pres-period">1971</td>
             <td><span class="pres-note">2o mandato</span></td>
           </tr>
           <tr>
             <td>57</td>
-            <td><span class="pres-name">Andre Gustavo Richer</span></td>
+            <td><a href="andre-gustavo-richer/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Andre Gustavo Richer</a></td>
             <td class="pres-period">1972 - 1973</td>
             <td><span class="pres-note">2o mandato</span></td>
           </tr>
@@ -1532,7 +1562,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
             <td>
               <div class="pres-name-cell">
                 <img class="pres-avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Marcio_Braga.jpg/250px-Marcio_Braga.jpg" alt="Marcio Braga" loading="lazy">
-                <span class="pres-name">Marcio Braga</span>
+                <a href="marcio-braga/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Marcio Braga</a>
               </div>
             </td>
             <td class="pres-period">1977 - 1980</td>
@@ -1540,13 +1570,13 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </tr>
           <tr class="highlighted">
             <td>60</td>
-            <td><span class="pres-name">Antonio Augusto Dunshee de Abranches</span></td>
+            <td><a href="dunshee-de-abranches/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Antonio Augusto Dunshee de Abranches</a></td>
             <td class="pres-period">1981 - 1983</td>
             <td><span class="pres-note">Libertadores 1981 e Mundial</span></td>
           </tr>
           <tr>
             <td>61</td>
-            <td><span class="pres-name">Eduardo Fernando de M. Mota</span></td>
+            <td><a href="eduardo-fernando-de-m-mota/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Eduardo Fernando de M. Mota</a></td>
             <td class="pres-period">1983</td>
             <td></td>
           </tr>
@@ -1555,7 +1585,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
             <td>
               <div class="pres-name-cell">
                 <img class="pres-avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/George_Helal%2C_diretor_do_Flamengo_2_%281970%29.tif/lossy-page1-250px-George_Helal%2C_diretor_do_Flamengo_2_%281970%29.tif.jpg" alt="George Helal" loading="lazy">
-                <span class="pres-name">George Helal</span>
+                <a href="george-helal/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">George Helal</a>
               </div>
             </td>
             <td class="pres-period">1984 - 1986</td>
@@ -1566,7 +1596,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
             <td>
               <div class="pres-name-cell">
                 <img class="pres-avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Marcio_Braga.jpg/250px-Marcio_Braga.jpg" alt="Marcio Braga" loading="lazy">
-                <span class="pres-name">Marcio Braga</span>
+                <a href="marcio-braga/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Marcio Braga</a>
               </div>
             </td>
             <td class="pres-period">1987 - 1988</td>
@@ -1574,7 +1604,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </tr>
           <tr>
             <td>64</td>
-            <td><span class="pres-name">Gilberto Cardoso Filho</span></td>
+            <td><a href="gilberto-cardoso-filho/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Gilberto Cardoso Filho</a></td>
             <td class="pres-period">1989 - 1990</td>
             <td></td>
           </tr>
@@ -1583,7 +1613,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
             <td>
               <div class="pres-name-cell">
                 <img class="pres-avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Marcio_Braga.jpg/250px-Marcio_Braga.jpg" alt="Marcio Braga" loading="lazy">
-                <span class="pres-name">Marcio Braga</span>
+                <a href="marcio-braga/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Marcio Braga</a>
               </div>
             </td>
             <td class="pres-period">1991 - 1992</td>
@@ -1608,31 +1638,31 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
         <tbody>
           <tr>
             <td>66</td>
-            <td><span class="pres-name">Luis Augusto Veloso</span></td>
+            <td><a href="luis-augusto-veloso/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Luis Augusto Veloso</a></td>
             <td class="pres-period">1993 - 1994</td>
             <td></td>
           </tr>
           <tr class="highlighted">
             <td>67</td>
-            <td><span class="pres-name">Kleber Leite</span></td>
+            <td><a href="kleber-leite/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Kleber Leite</a></td>
             <td class="pres-period">1995 - 1998</td>
             <td><span class="pres-note">Reorganizacao do clube</span></td>
           </tr>
           <tr>
             <td>68</td>
-            <td><span class="pres-name">Edmundo dos Santos Silva</span></td>
+            <td><a href="edmundo-dos-santos-silva/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Edmundo dos Santos Silva</a></td>
             <td class="pres-period">1999 - 2002</td>
             <td></td>
           </tr>
           <tr>
             <td>69</td>
-            <td><span class="pres-name">Gilberto Cardoso Filho</span></td>
+            <td><a href="gilberto-cardoso-filho/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Gilberto Cardoso Filho</a></td>
             <td class="pres-period">2002</td>
             <td><span class="pres-note">Interino</span></td>
           </tr>
           <tr>
             <td>70</td>
-            <td><span class="pres-name">Helio Paulo Ferraz</span></td>
+            <td><a href="helio-paulo-ferraz/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Helio Paulo Ferraz</a></td>
             <td class="pres-period">2002 - 2003</td>
             <td></td>
           </tr>
@@ -1641,7 +1671,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
             <td>
               <div class="pres-name-cell">
                 <img class="pres-avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Marcio_Braga.jpg/250px-Marcio_Braga.jpg" alt="Marcio Braga" loading="lazy">
-                <span class="pres-name">Marcio Braga</span>
+                <a href="marcio-braga/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Marcio Braga</a>
               </div>
             </td>
             <td class="pres-period">2004 - 2009</td>
@@ -1649,7 +1679,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
           </tr>
           <tr>
             <td>72</td>
-            <td><span class="pres-name">Delair Dumbrosck</span></td>
+            <td><a href="delair-dumbrosck/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Delair Dumbrosck</a></td>
             <td class="pres-period">2009</td>
             <td><span class="pres-note">Interino</span></td>
           </tr>
@@ -1658,7 +1688,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
             <td>
               <div class="pres-name-cell">
                 <img class="pres-avatar" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Patricia_Amorim.JPG" alt="Patricia Amorim" loading="lazy">
-                <span class="pres-name">Patricia Amorim</span>
+                <a href="patricia-amorim/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Patricia Amorim</a>
               </div>
             </td>
             <td class="pres-period">2010 - 2012</td>
@@ -1669,7 +1699,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
             <td>
               <div class="pres-name-cell">
                 <img class="pres-avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/BANDEIRA_DE_MELLO_14_08_2024_-_FOTO_CHICO_FERREIRA_%2853922358927%29_%28cropped%29.jpg/250px-BANDEIRA_DE_MELLO_14_08_2024_-_FOTO_CHICO_FERREIRA_%2853922358927%29_%28cropped%29.jpg" alt="Eduardo Bandeira de Mello" loading="lazy">
-                <span class="pres-name">Eduardo Bandeira de Mello</span>
+                <a href="bandeira-de-mello/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Eduardo Bandeira de Mello</a>
               </div>
             </td>
             <td class="pres-period">2013 - 2018</td>
@@ -1680,7 +1710,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
             <td>
               <div class="pres-name-cell">
                 <img class="pres-avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Luiz_Rodolfo_Landim_machado.png/250px-Luiz_Rodolfo_Landim_machado.png" alt="Rodolfo Landim" loading="lazy">
-                <span class="pres-name">Rodolfo Landim</span>
+                <a href="rodolfo-landim/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Rodolfo Landim</a>
               </div>
             </td>
             <td class="pres-period">2019 - 2024</td>
@@ -1691,7 +1721,7 @@ button { cursor:pointer; border:none; background:none; font-family:var(--font-bo
             <td>
               <div class="pres-name-cell">
                 <div class="pres-avatar-placeholder">BAP</div>
-                <span class="pres-name">Luiz Eduardo Baptista (BAP)</span>
+                <a href="bap/" class="pres-name" style="color:var(--red);text-decoration:none;font-weight:600;">Luiz Eduardo Baptista (BAP)</a>
               </div>
             </td>
             <td class="pres-period">2025 - 2027</td>
